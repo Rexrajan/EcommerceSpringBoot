@@ -21,6 +21,10 @@ public class UserController {
         return "TestApi works.";
     }
 
+    @GetMapping("/sum")
+    public int addition(){
+        return 45+10;
+    }
 
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody User user) {
