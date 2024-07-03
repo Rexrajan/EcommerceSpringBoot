@@ -23,6 +23,7 @@ public class UserController {
 
     @GetMapping("/sum")
     public int addition(){
+        System.out.println("Sum of 45+10");
         return 45+10;
     }
 
