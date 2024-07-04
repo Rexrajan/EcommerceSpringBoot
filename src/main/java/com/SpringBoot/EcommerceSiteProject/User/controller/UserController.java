@@ -21,6 +21,11 @@ public class UserController {
         return "TestApi works.";
     }
 
+    @GetMapping("/sum")
+    public int addition(){
+        System.out.println("Sum of 45+10");
+        return 45+10;
+    }
 
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody User user) {
